@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>travel website</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/main.css
+    "
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <div class="container">
+        <div class="main-nav" id="main-nav">
+          <div id="hamburger" class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+
+            <div class="line3"></div>
+          </div>
+          <div class="logo light-color">
+            <i class="fas fa-regular fa-tree fa-2x"></i>
+
+            <h1>Travel</h1>
+          </div>
+          <ul id="list" class="list">
+            <li class="list-item"><a href="#splide">home</a></li>
+            <li class="list-item"><a href="#">about us</a></li>
+            <li class="list-item"><a href="#">destination</a></li>
+            <li class="list-item"><a href="#">hotels</a></li>
+            <li class="list-item"><a href="#">flight bookings</a></li>
+          </ul>
+          <div class="sub-nav">
+            <div class="lang">
+              <h4>En</h4>
+              <i class="fas fa-thin fa-angle-down"></i>
+            </div>
+            <button id="login" class="btn" type="submit">Login</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- showcase -->
+    <div id="splide" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="images/pexels-syed-qaarif-andrabi-7390428.jpg" alt="" />
+            <div id="showcase" class="showcase">
+              <h2>we are the wonder of your weekend</h2>
+              <h1>discover the world</h1>
+              <h3>with our guide</h3>
+              <a href="#" class="link link-light">Start Tours</a>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <img src="images/pexels-imad-clicks-8696016.jpg" alt="" />
+            <div id="showcase" class="showcase">
+              <h2>we are the wonder of your weekend</h2>
+              <h1>discover the world</h1>
+              <h3>with our guide</h3>
+              <a href="#" class="link link-light">Start Tours</a>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <img src="./images/pexels-shahid-sultan-7087336.jpg" alt="" />
+            <div id="showcase" class="showcase">
+              <h2>we are the wonder of your weekend</h2>
+              <h1>discover the world</h1>
+              <h3>with our guide</h3>
+              <a href="#" class="link link-light">Start Tours</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="about" class="about">
+      <div class="booking">
+        <div class="location">
+          <i class="fas fa-solid fa-globe"></i>
+          <h5>Choose your location</h5>
+          <i class="fas fa-solid fa-angle-down"></i>
+        </div>
+        <div class="date">
+          <i class="fas fa-regular fa-calendar"></i>
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" class="unstyled" />
+          </div>
+        </div>
+        <div class="phone">
+          <i class="fas fa-solid fa-phone-volume"></i>
+          <div class="form-group">
+            <label for="number">phone</label>
+            <input type="number" placeholder="+111-222-3333" />
+          </div>
+        </div>
+        <a href="#" class="link link-light">Book now</a>
+      </div>
+      <div class="about__content container">
+        <div class="about-us">
+          <h3>About us</h3>
+          <h2>Explore all corners of the world with us.</h2>
+        </div>
+        <div class="about-detail">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+            praesentium est, quaerat quod in deleniti enim inventore. Fugiat,
+            aliquid doloremque ratione a amet iusto adipisci fuga provident
+            consequuntur consequatur voluptas nulla reprehenderit architecto
+            nostrum id ab harum odio asperiores quo commodi est corporis. Sequi
+            porro corrupti, asperiores omnis tempore eveniet!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+            voluptates suscipit expedita ut earum tenetur ab possimus illo
+            quibusdam animi accusantium impedit, praesentium fuga quo culpa eius
+            doloremque corrupti, obcaecati asperiores quaerat id magnam
+            assumenda! Saepe quas aperiam est error.
+          </p>
+          <a href="#" class="link link-dark">learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/js/splide.min.js"
+      ;
+      integrity="sha256-pfZnm8h7uPHeFifmWXCn45NtyE0UfdAZSblKEN6v4Jo="
+      ;
+      crossorigin="anonymous"
+      ;
+    ></script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
