@@ -156,6 +156,7 @@ a:focus {
 }
 
 .showcase {
+  padding: 1em;
   height: 100%;
   text-align: center;
   -webkit-box-pack: center;
@@ -250,9 +251,6 @@ a:focus {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .showcase {
-    height: 100%;
-  }
   .showcase h1 {
     font-size: 2.5rem;
   }
@@ -265,9 +263,6 @@ a:focus {
 @media only screen and (max-width: 320px) {
   .lang {
     display: none !important;
-  }
-  .showcase {
-    height: 100%;
   }
   .showcase h1 {
     font-size: 1.5rem;
@@ -338,7 +333,6 @@ a:focus {
   -webkit-box-shadow: 0 0 20px 0 lightslategrey;
           box-shadow: 0 0 20px 0 lightslategrey;
   margin-bottom: 2em;
-  padding: 2em;
 }
 
 .about__content {
@@ -351,6 +345,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2em 1em;
 }
 
 .about__content .about-us {
@@ -392,7 +387,6 @@ a:focus {
 .booking {
   z-index: 1;
   position: relative;
-  top: -45px;
   background-color: #093d5e;
   width: 70vw;
   display: -webkit-box;
@@ -498,4 +492,104 @@ a:focus {
   .about-detail p {
     font-size: 3rem;
   }
+}
+
+.catenations {
+  margin: 1em 0;
+}
+
+.category {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.category h5 {
+  color: #004e89;
+  font-size: 1rem;
+}
+
+.category h1 {
+  font-size: 1.6rem;
+  margin: 0.4em 0;
+  letter-spacing: 1px;
+}
+
+.category__boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  margin: 2em 0;
+}
+
+.category__boxes__box {
+  padding: 1em;
+}
+
+.category__boxes__box i {
+  padding: 1em;
+  border-radius: 30px;
+  background-color: #093d5e;
+  color: #fff;
+}
+
+.category__boxes__box h2 {
+  margin: 0.5em 0;
+  font-weight: 700;
+}
+
+.category__boxes__box p {
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.destinations {
+  text-align: center;
+}
+
+.destinations h4 {
+  color: #004e89;
+}
+
+.destinations h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 0.4em 0;
+}
+
+.destinations__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.destinations__boxes__box .image {
+  width: 20em;
+  height: 15em;
+}
+
+.destinations__boxes__box .image img {
+  border-radius: 10px;
+}
+
+.destinations__boxes__box .pricing {
+  margin: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.destinations__boxes__box h6 {
+  text-align: start;
 }

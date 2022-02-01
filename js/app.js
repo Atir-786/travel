@@ -35,7 +35,7 @@ new Splide(".splide", {
   rewind: true,
   rewindSpeed: number,
   width: "100vw",
-  height: "60vh",
+  height: "70vh",
   interval: 1000,
   pauseOnhover: true,
   drag: true,
