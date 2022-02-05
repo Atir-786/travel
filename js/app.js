@@ -2,7 +2,7 @@ const ham = document.getElementById("hamburger");
 const list = document.getElementById("list");
 const body = document.querySelector("body");
 const listItem = document.querySelectorAll(".list-item");
-console.log(listItem);
+// console.log(listItem);
 // const toggleNav = function () {
 //   list.classList.toggle("toggler");
 //   body.classList.toggle("overflow");
@@ -27,12 +27,12 @@ listItem.forEach((item) => {
 
 // slider
 
-new Splide(".splide", {
+var splide1 = new Splide(".splide1", {
   type: "slide",
   perPage: 1,
-  autoPlay: true,
-  speed: (number = 1000),
+  speed: (number = 5000),
   rewind: true,
+  pagination: true,
   rewindSpeed: number,
   width: "100vw",
   height: "70vh",
@@ -40,4 +40,54 @@ new Splide(".splide", {
   pauseOnhover: true,
   drag: true,
   cover: true,
+  autoplay: true,
 }).mount();
+// /// // // // ///
+var splide2 = new Splide(".splide2", {
+  type: "loop",
+  perPage:
+    window.innerWidth > 900
+      ? 3
+      : window.innerWidth < 900 && window.innerWidth > 500
+      ? 2
+      : 1,
+  perMove: 1,
+  trimSpace: false,
+  padding: { left: "1rem", right: "2rem" },
+  // speed: (number = 6000),
+  // rewind: true,
+  // rewindSpeed: number,
+  arrows: "slider",
+
+  pagination: true,
+  fixedWidth: "20rem",
+  fixedHeight: "17rem",
+
+  gap: "2rem",
+  // interval: 1000,
+  // pauseOnhover: true,
+  drag: true,
+  cover: true,
+  // autoplay: true,
+}).mount();
+// const splide2 = new Splide(".splide2");
+
+// splide2.on("pagination:mounted", function (data) {
+//   // You can add your class to the UL element
+//   data.list.classList.add("splide__pagination--custom");
+
+//   // `items` contains all dot items
+//   data.items.forEach(function (item) {
+//     item.button.textContent = String(item.page + 1);
+//   });
+// });
+
+// splide2.mount();
+
+// var width =
+//   window.innerWidth > 900
+//     ? 3
+//     : window.innerWidth < 900 && window.innerWidth > 500
+//     ? 2
+//     : 1;
+// console.log(width);

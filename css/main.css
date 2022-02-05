@@ -59,6 +59,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1em 0;
 }
 
 .sub-nav {
@@ -94,6 +95,10 @@ a {
   font-weight: 400;
 }
 
+.sub-nav button:hover, .sub-nav button:active {
+  opacity: 0.8;
+}
+
 .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,15 +117,12 @@ a {
   text-transform: capitalize;
   font-size: 1.2rem;
   font-weight: 400;
-  -webkit-transition: all 300ms ease-in;
-  transition: all 300ms ease-in;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 
-a:hover,
-a:active,
-a:focus {
-  color: #004e89;
-  border-bottom: 2px solid #093d5e;
+.list-item a:hover, .list-item a:active {
+  border-bottom: 3px solid #093d5e;
 }
 
 .hamburger {
@@ -300,14 +302,14 @@ a:focus {
 .link {
   padding: 0.5em 1em;
   border-radius: 5px;
-  -webkit-transition: all ease 2s;
-  transition: all ease 2s;
+  -webkit-transition: all ease 200ms;
+  transition: all ease 200ms;
 }
 
-.link:hover,
-.link :active,
-.link :focus {
+.link:hover, .link:active {
   opacity: 0.8;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .link-light {
@@ -332,7 +334,6 @@ a:focus {
 .about {
   -webkit-box-shadow: 0 0 20px 0 lightslategrey;
           box-shadow: 0 0 20px 0 lightslategrey;
-  margin-bottom: 2em;
 }
 
 .about__content {
@@ -495,7 +496,8 @@ a:focus {
 }
 
 .catenations {
-  margin: 1em 0;
+  padding: 2em 0;
+  background-color: #f4f4f4;
 }
 
 .category {
@@ -515,16 +517,19 @@ a:focus {
 }
 
 .category__boxes {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2em;
   margin: 2em 0;
 }
 
 .category__boxes__box {
   padding: 1em;
+}
+
+.category__boxes__box:hover {
+  background-color: #fff;
 }
 
 .category__boxes__box i {
@@ -544,44 +549,35 @@ a:focus {
   line-height: 1.7;
 }
 
+@media only screen and (max-width: 500px) {
+  .category__boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 2em;
+  }
+}
+
 .destinations {
   text-align: center;
+  padding: 2em 0;
 }
 
-.destinations h4 {
-  color: #004e89;
+.destinations .splide2 {
+  margin-top: 2em;
 }
 
-.destinations h1 {
-  font-weight: 700;
-  font-size: 2rem;
-  letter-spacing: 1px;
-  margin: 0.4em 0;
+.destinations .card .image {
+  height: 12rem;
+  width: 20rem;
 }
 
-.destinations__boxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  gap: 2em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.destinations__boxes__box .image {
-  width: 20em;
-  height: 15em;
-}
-
-.destinations__boxes__box .image img {
-  border-radius: 10px;
-}
-
-.destinations__boxes__box .pricing {
-  margin: 0.5em;
+.destinations .card .pricing {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 0.7em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,6 +586,6 @@ a:focus {
           justify-content: space-between;
 }
 
-.destinations__boxes__box h6 {
+.destinations .card h6 {
   text-align: start;
 }
