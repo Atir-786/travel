@@ -41,6 +41,7 @@ var splide1 = new Splide(".splide1", {
   drag: true,
   cover: true,
   autoplay: true,
+  arrows: window.innerWidth > 770 ? "slider" : false,
 }).mount();
 // /// // // // ///
 var splide2 = new Splide(".splide2", {
@@ -57,7 +58,7 @@ var splide2 = new Splide(".splide2", {
   // speed: (number = 6000),
   // rewind: true,
   // rewindSpeed: number,
-  arrows: "slider",
+  arrows: false,
 
   pagination: true,
   fixedWidth: "20rem",

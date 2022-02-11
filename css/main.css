@@ -589,3 +589,115 @@ a {
 .destinations .card h6 {
   text-align: start;
 }
+
+.gallery {
+  padding: 2em 0;
+  background-color: #fff;
+}
+
+.gallery__content {
+  text-align: center;
+}
+
+.gallery__content h5 {
+  color: #004e89;
+}
+
+.gallery__content h1 {
+  margin: 0.2em 0;
+  letter-spacing: 0.3px;
+}
+
+.gallery__content p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 25px;
+  margin: 0.7em auto;
+  max-width: 80ch;
+}
+
+.gallery__content .grid {
+  margin: 1em 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5em;
+  height: 90vh;
+}
+
+.gallery__content .grid .grid-item {
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.gallery__content .grid .grid-item .overlay-full {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery__content .grid .grid-item .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 6px 0;
+}
+
+.gallery__content .grid .grid-item .overlay h4 {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.gallery__content .grid .grid-item-1 {
+  background: url(../images/gridimages/tuscany.jpg) no-repeat center center/cover;
+  grid-row: auto/span 2;
+}
+
+.gallery__content .grid .grid-item-2 {
+  background: url(../images/gridimages/coxbazar.jpg) no-repeat center center/cover;
+}
+
+.gallery__content .grid .grid-item-3 {
+  background: url(../images/gridimages/bali.jpg) no-repeat center center/cover;
+}
+
+.gallery__content .grid .grid-item-4 {
+  background: url(../images/gridimages/iceland.jpg) no-repeat center center/cover;
+  grid-row: auto / span 2;
+}
+
+.gallery__content .grid .grid-item-5 {
+  background: url(../images/gridimages/jaflong.jpg) no-repeat center center/cover;
+}
+
+.gallery__content .grid .grid-item-6 {
+  background: url(../images/gridimages/saienmartin.jpg) no-repeat center center/cover;
+}
+
+.gallery__content .grid .grid-item-7 {
+  background: url(../images/gridimages/lake.jpg) no-repeat center center/cover;
+}
+
+@media only screen and (max-width: 580px) {
+  .grid {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .grid .grid-item-1,
+  .grid .grid-item-4 {
+    grid-row: auto / span1 !important;
+  }
+}
