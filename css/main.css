@@ -87,7 +87,7 @@ a {
 .sub-nav button {
   border: none;
   padding: 0.5em 1em;
-  background-color: #004e89;
+  background-color: #081238;
   color: #fff;
   border-radius: 5px;
   font-size: 1rem;
@@ -122,7 +122,7 @@ a {
 }
 
 .list-item a:hover, .list-item a:active {
-  border-bottom: 3px solid #093d5e;
+  border-bottom: 3px solid #133ed6;
 }
 
 .hamburger {
@@ -150,11 +150,11 @@ a {
   margin-left: 0.1em;
   font-size: 2rem;
   font-family: "Mochiy Pop P One";
-  color: #093d5e;
+  color: #133ed6;
 }
 
 .logo i {
-  color: #093d5e;
+  color: #133ed6;
 }
 
 .showcase {
@@ -225,7 +225,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    background-color: #004e89;
+    background-color: #081238;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -356,7 +356,7 @@ a {
 }
 
 .about__content .about-us h3 {
-  color: #004e89;
+  color: #081238;
   font-weight: 300;
 }
 
@@ -388,7 +388,7 @@ a {
 .booking {
   z-index: 1;
   position: relative;
-  background-color: #093d5e;
+  background-color: #133ed6;
   width: 70vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,8 +407,8 @@ a {
   padding: 0.8em 2em;
 }
 
-.location,
 .date,
+.location,
 .phone {
   border: 1px solid #fff;
   padding: 0.8em;
@@ -506,7 +506,7 @@ a {
 }
 
 .category h5 {
-  color: #004e89;
+  color: #081238;
   font-size: 1rem;
 }
 
@@ -535,7 +535,7 @@ a {
 .category__boxes__box i {
   padding: 1em;
   border-radius: 30px;
-  background-color: #093d5e;
+  background-color: #133ed6;
   color: #fff;
 }
 
@@ -600,7 +600,7 @@ a {
 }
 
 .gallery__content h5 {
-  color: #004e89;
+  color: #081238;
 }
 
 .gallery__content h1 {
@@ -695,6 +695,7 @@ a {
   .grid {
     -ms-grid-columns: (1fr)[2] !important;
         grid-template-columns: repeat(2, 1fr) !important;
+    padding: 0 0.5em;
   }
   .grid .grid-item-1,
   .grid .grid-item-4 {
